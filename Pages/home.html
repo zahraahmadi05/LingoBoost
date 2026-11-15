@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LingoBoost</title>
+    <link rel="icon" href="icons/lotus-logo.png" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="mx-auto w-full max-w-md min-h-dvh bg-white">
+      <section class="min-h-dvh flex flex-col p-6 pb-22">
+        <header class="flex items-center justify-between">
+          <div class="flex flex-col">
+            <a href="welcome.html">
+              <img
+                id="back-btn"
+                src="icons/arrow-back.png"
+                alt="back to home"
+                class="w-11 h-10"
+              />
+            </a>
+            <p class="text-purple-500 text-lg">Hi Dear,</p>
+            <div class="flex items-center gap-1">
+              <span id="user-name" class="text-blue-950 text-xl">Friend</span>
+              <img src="icons/sun.svg" alt="sun-logo" class="w-7 h-7" />
+            </div>
+          </div>
+          <div class="w-10 h-10 rounded-full">
+            <a href="user-profile.html">
+              <img
+                src="icons/user-profile.png"
+                alt="user-profile"
+                class="cursor-pointer w-10 h-10"
+              />
+            </a>
+          </div>
+        </header>
+
+        <div class="bg-[#d5dffe] mt-4 flex p-5 rounded-2xl">
+          <div class="flex-1">
+            <p class="text-[#1E0B7F] text-xl font-medium">
+              A new day, <br />
+              A new word.
+            </p>
+            <p id="message" class="text-[#4D486C] mt-2 text-base">
+              Keep going -- you're <br />
+              building something great!
+            </p>
+            <img
+              id="party-popper"
+              src="icons/party-paper.png"
+              alt=""
+              class="w-10 h-10 mt-4 hidden"
+            />
+          </div>
+          <div class="flex flex-col items-end justify-between shrink-0">
+            <img src="icons/clover.png" alt="sprout-logo" class="w-12 h-12" />
+            <a id="daily-btn" href="today-word.html">
+              <img
+                src="icons/arrow-circle.svg"
+                alt="Open today's word"
+                class="w-10 h-10"
+              />
+            </a>
+          </div>
+        </div>
+
+        <h1 class="mt-4 text-xl text-[#010834]">Categories</h1>
+
+        <div class="mt-4 grid grid-cols-2 gap-4">
+          <a
+            href="vocabulary.html"
+            class="flex flex-col rounded-3xl bg-[#D8ECF9] p-4"
+          >
+            <img
+              class="w-9 h-9"
+              src="icons/vocabulary.png"
+              alt="vocabulary-logo"
+            />
+            <h3 class="mt-2 text-[#030430]">Vocabulary</h3>
+            <p class="text-[#498AC8] text-sm">Build your word bank</p>
+            <img
+              src="icons/arrow-right.png"
+              alt="arrow-right-logo"
+              class="w-9 h-10 mt-auto self-end"
+            />
+          </a>
+
+          <a
+            href="grammar.html"
+            class="flex flex-col rounded-3xl bg-[#D8F9F0] p-4"
+          >
+            <img class="w-10 h-10" src="icons/grammar.png" alt="grammar-logo" />
+            <h3 class="mt-2 text-[#030430]">Grammar</h3>
+            <p class="text-[#498AC8] text-sm">Understand the rules</p>
+            <img
+              src="icons/arrow-right.png"
+              alt="arrow-right-logo"
+              class="w-9 h-10 mt-auto self-end"
+            />
+          </a>
+
+          <a
+            href="pronunciation.html"
+            class="flex flex-col rounded-3xl bg-[#EDD8F9] p-4"
+          >
+            <img
+              class="w-10 h-10"
+              src="icons/headphone.png"
+              alt="pronunciation-logo"
+            />
+            <h3 class="mt-2 text-[#030430]">Music</h3>
+            <p class="text-[#498AC8] text-sm">Learn & have some fun</p>
+            <img
+              src="icons/arrow-right.png"
+              alt="arrow-right-logo"
+              class="w-9 h-10 mt-auto self-end"
+            />
+          </a>
+
+          <a
+            href="flashcards.html"
+            class="flex flex-col rounded-3xl bg-[#F9E9D8] p-4"
+          >
+            <img
+              class="w-10 h-10"
+              src="icons/flashcard.png"
+              alt="flashcards-logo"
+            />
+            <h3 class="mt-2 text-[#030430]">Flashcards</h3>
+            <p class="text-[#498AC8] text-sm">Quick review</p>
+            <img
+              src="icons/arrow-right.png"
+              alt="arrow-right-logo"
+              class="w-9 h-10 mt-auto self-end"
+            />
+          </a>
+        </div>
+
+        <a
+          href="progress.html"
+          class="mt-6 block rounded-2xl border border-[#666] p-4"
+        >
+          <div id="goal-progress">
+            <div class="flex items-center gap-4">
+              <img
+                src="icons/goal-target.png"
+                alt=""
+                class="w-11 h-11 shrink-0"
+              />
+
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <p class="text-[#000850] font-medium">
+                    Today's 10 words from the 504 words
+                  </p>
+                  <img src="icons/chevron-right.svg" alt="" class="w-5 h-5" />
+                </div>
+                <p class="text-[#081188]">Learn 12 new words</p>
+                <div class="mt-3 flex items-center gap-3"></div>
+                <div class="mt-3 flex items-center gap-3">
+                  <div class="bg-[#F2DAF9] h-2 flex-1 rounded-full">
+                    <div
+                      id="goal-fill"
+                      class="h-full rounded-full bg-[#000ED6]"
+                    ></div>
+                  </div>
+                  <span id="goal-count" class="shrink-0 text-[#030B33] text-xl"
+                    >1/12</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="goal-done" class="hidden">
+            <div class="flex items-center gap-3">
+              <img
+                src="icons/party-popper.svg"
+                alt=""
+                class="w-10 h-10 shrink-0"
+              />
+              <p class="text-[#000850] font-medium">
+                You learned 12 words today!🤩
+              </p>
+            </div>
+          </div>
+        </a>
+
+        <button
+          id="add-btn"
+          class="mt-4 rounded-full bg-blue-600 px-4 py-2 text-white"
+        >
+          +1 word
+        </button>
+
+        <nav
+          class="fixed bottom-0 left-1/2 w-full max-w-md -translate-x-1/2 border-t border-gray-300 bg-white"
+        >
+          <div class="flex justify-around py-2">
+            <a href="home.html" class="flex flex-col items-center">
+              <img src="icons/home.svg" alt="" class="w-10 h-10 rounded-full" />
+              <p class="text-[#601de8] text-sm font-medium">Home</p>
+            </a>
+            <a href="practice.html" class="flex flex-col items-center">
+              <img
+                src="icons/practice.svg"
+                alt=""
+                class="w-10 h-10 rounded-full"
+              />
+              <p class="text-[#601de8] text-sm font-medium">Practice</p>
+            </a>
+            <a href="progress.html" class="flex flex-col items-center">
+              <img
+                src="icons/progress.svg"
+                alt=""
+                class="w-10 h-10 rounded-full"
+              />
+              <p class="text-[#601de8] text-sm font-medium">Progress</p>
+            </a>
+            <a href="more.html" class="flex flex-col items-center">
+              <img src="icons/more.svg" alt="" class="w-10 h-10 rounded-full" />
+              <p class="text-[#601de8] text-sm font-medium">More</p>
+            </a>
+          </div>
+        </nav>
+      </section>
+    </main>
+    <script src="src/js/words.js"></script>
+    <script src="src/js/home.js"></script>
+  </body>
+</html>
